@@ -1,0 +1,9 @@
+<settings>
+	<servers>
+		<server>
+			<id>bintray-jformdesigner-svgSalamander</id>
+			<username>${env.BINTRAY_USER}</username>
+			<password>${env.BINTRAY_KEY}</password>
+		</server>
+	</servers>
+</settings>
