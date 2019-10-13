@@ -19,16 +19,21 @@ Current status
 --------------
 SVG Salamander is part of the Salamander project hosted on http://www.kitfox.com
 
-Projects using SVG Salamander
------------------------------
-* [Apache Pivot](http://pivot.apache.org/) - An alternate crossplatform GUI for Java.
-* [VisiCut](http://visicut.org/) - A tool for laser precision cutting.
-* [Xoetrope](http://www.xoetrope.com/) - An alternate crossplatform GUI for Java.
-* [Power Line](http://suchanek.name/programs/powerline/index.html) - A slide editor for SVG.
-* [Tygron](http://www.tygron.com/) - Serious games illustrating urban planning and climate change.
-* [NeoLogica](http://www.neologica.it/eng/Home.php) - Medical imaging.
-* [JOSM](https://josm.openstreetmap.de/) - Java OpenStreetMap Editor.
-* [Freeplane](http://freeplane.org) - Java program for working with Mind Maps
+Download
+--------
+
+SVG Salamander binaries are available on **JCenter** and **Maven Central**.
+
+If you use Maven or Gradle, add a dependency with following coordinates to your
+build script:
+
+    groupId:     com.formdev
+    artifactId:  svgSalamander
+    version:     1.1.2.1
+
+Otherwise download `svgSalamander-<version>.jar` here:
+
+[![Download](https://api.bintray.com/packages/jformdesigner/svgSalamander/svgSalamander/images/download.svg)](https://bintray.com/jformdesigner/svgSalamander/svgSalamander/_latestVersion)
 
 License
 -------
