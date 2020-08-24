@@ -29,7 +29,7 @@ build script:
 
     groupId:     com.formdev
     artifactId:  svgSalamander
-    version:     1.1.2.1
+    version:     1.1.2.3
 
 Otherwise download `svgSalamander-<version>.jar` here:
 
@@ -37,4 +37,4 @@ Otherwise download `svgSalamander-<version>.jar` here:
 
 License
 -------
-SVG Salamander is available both under the [LGPL](www/license/license-lgpl.txt) and [BSD](www/license/license-bsd.txt) licenses.
+SVG Salamander is available both under the [BSD](licenses/license-BSD.txt) and [LGPL](www/license/license-lgpl.txt) licenses.
