@@ -29,7 +29,7 @@ build script:
 
     groupId:     com.formdev
     artifactId:  svgSalamander
-    version:     1.1.2.3
+    version:     1.1.2.4
 
 Otherwise download `svgSalamander-<version>.jar` here:
 
