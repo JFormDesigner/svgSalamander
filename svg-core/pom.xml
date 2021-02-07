@@ -6,7 +6,7 @@
 
     <groupId>com.formdev</groupId>
     <artifactId>svgSalamander</artifactId>
-    <version>1.1.2.4</version>
+    <version>1.1.2.5-SNAPSHOT</version>
     <packaging>jar</packaging>
 
     <name>com.formdev:svgSalamander</name>
@@ -36,10 +36,10 @@
     </scm>
 
     <distributionManagement>
-        <repository>
-            <id>bintray-jformdesigner-svgSalamander</id>
-            <url>https://api.bintray.com/maven/jformdesigner/svgSalamander/svgSalamander/;publish=1</url>
-        </repository>
+        <snapshotRepository>
+            <id>ossrh</id>
+            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+        </snapshotRepository>
     </distributionManagement>
 
     <properties>
