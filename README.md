@@ -22,18 +22,30 @@ SVG Salamander is part of the Salamander project hosted on http://www.kitfox.com
 Download
 --------
 
-SVG Salamander binaries are available on **JCenter** and **Maven Central**.
+SVG Salamander binaries are available on **Maven Central**.
 
 If you use Maven or Gradle, add a dependency with following coordinates to your
 build script:
 
     groupId:     com.formdev
     artifactId:  svgSalamander
-    version:     1.1.2.4
+    version:     (see button below)
 
 Otherwise download `svgSalamander-<version>.jar` here:
 
-[![Download](https://api.bintray.com/packages/jformdesigner/svgSalamander/svgSalamander/images/download.svg)](https://bintray.com/jformdesigner/svgSalamander/svgSalamander/_latestVersion)
+[![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.formdev/svgSalamander/badge.svg?style=flat-square&color=007ec6)](https://maven-badges.herokuapp.com/maven-central/com.formdev/svgSalamander)
+
+### Snapshots
+
+SVG Salamander snapshot binaries are available on
+[Sonatype OSSRH](https://oss.sonatype.org/content/repositories/snapshots/com/formdev/svgSalamander/).
+To access the latest snapshot, change the SVG Salamander version in your dependencies
+to `<version>-SNAPSHOT` and add the repository
+`https://oss.sonatype.org/content/repositories/snapshots/` to your build (see
+[Maven](https://maven.apache.org/guides/mini/guide-multiple-repositories.html)
+and
+[Gradle](https://docs.gradle.org/current/userguide/declaring_repositories.html#sec:declaring_custom_repository)
+docs).
 
 License
 -------
