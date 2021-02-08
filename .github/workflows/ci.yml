@@ -49,12 +49,12 @@ jobs:
         working-directory: svg-core
 
 
-  snapshot:
+  deploy:
     runs-on: ubuntu-latest
     needs: build
     if: |
       github.event_name == 'push' &&
-      github.ref == 'refs/heads/master' &&
+      (startsWith( github.ref, 'refs/tags/' ) || github.ref == 'refs/heads/master') &&
       github.repository == 'JFormDesigner/svgSalamander'
 
     steps:
@@ -67,6 +67,8 @@ jobs:
           server-id: ossrh
           server-username: OSSRH_USERNAME
           server-password: OSSRH_PASSWORD
+          gpg-private-key: ${{ secrets.SIGNING_KEY }}
+          gpg-passphrase: SIGNING_PASSWORD
 
       - name: Cache Maven packages
         uses: actions/cache@v2
@@ -75,9 +77,10 @@ jobs:
           key: ${{ runner.os }}-m2-${{ hashFiles('**/pom.xml') }}
           restore-keys: ${{ runner.os }}-m2
 
-      - name: Publish snapshot to oss.sonatype.org
-        run: mvn --batch-mode source:jar javadoc:jar deploy
+      - name: Publish to oss.sonatype.org
+        run: mvn --batch-mode deploy -P deploy
         working-directory: svg-core
         env:
           OSSRH_USERNAME: ${{ secrets.OSSRH_USERNAME }}
           OSSRH_PASSWORD: ${{ secrets.OSSRH_PASSWORD }}
+          SIGNING_PASSWORD: ${{ secrets.SIGNING_PASSWORD }}
